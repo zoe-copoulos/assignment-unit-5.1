@@ -7,7 +7,7 @@ This unit, we'll be exploring objects by creating an application to help maintai
 - objects
 - HTML & CSS
 
-## Assignment - Function Practice
+## Assignment - Object Practice
 
 **Reminder**: Make sure to answer this week's Slack discussion question!
 
