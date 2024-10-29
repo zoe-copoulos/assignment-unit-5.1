@@ -10,8 +10,21 @@ console.log('***** Object Practice *****')
 */
 const me = {
   // TODO - add properties here
+  firstName: 'Zoe',
+  lastName: 'Copoulos',
+  hasSiblings: 'false',
+  shoeCount: 100,
+  // I think I found a use for infinity because I have a LOT of shoes
+  favThreeFoods: [
+    'baklava',
+    'spanakopita',
+    'pad thai'
+  ]
 };
-console.log('A little about me:', me);
+
+console.log('A little about me:', me); 
+
+//end me  (lol mood)
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -20,12 +33,43 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
+//initial try below
 
+//let fullName = me.firstName  + me.lastName
+
+//console.log (fullName)
+
+//logging correct except no space between
+//come back when you figure out what you did(n't do)
+//thinking about it before coming back, I could build this into the values but I feel like there's a better wya to do it
+//I CAME BACK , see below
+
+let fullName = `${me.firstName} ${me.lastName}`
+
+// it was me not using the money, I am naturally frugal
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+
+// this is all wrong
+//function oneFavFood {
+  //return me.favThreeFoods [0]
+  //return me.favThreeFoods [1]
+//}
+ 
+//console.log(oneFavFood[0])
+//console.log(oneFavFood[1])
+ 
+// it was once again a money problem
+let favFoods = me.favThreeFoods
+console.log(`First fave food is ${favFoods[0]}`)
+console.log(`Last fave food is ${favFoods[2]}`)
+
+// end oneFavFood
+// 
+
 
 
 
@@ -36,6 +80,14 @@ console.log('A little about me:', me);
   - Console.log your updated shoe count. 
 */
 
+console.log(`Shoe count is ${me.shoeCount}`)
+me.shoeCount++
+console.log(`New shoe count is ${me.shoeCount}`)
+
+/*this one thing is making this flow a lot easier, maybe this is the thing I missed that was not allowing me to move on from 
+the things I was grasping
+one of many things I am sure
+*/
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +95,7 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = 'Black'
+console.log (`I also have a favorite color: ${me.favoriteColor}`)
+
